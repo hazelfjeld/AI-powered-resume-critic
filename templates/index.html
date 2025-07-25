@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Critic</title>
+</head>
+<body>
+    <h1>AI Resume Critic</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume" accept=".pdf" required>
+        <button type="submit">Upload and Analyze</button>
+    </form>
+
+    {% if feedback %}
+        <h2>AI Feedback</h2>
+        <p>{{ feedback|safe }}</p>
+    {% endif %}
+</body>
+</html>
