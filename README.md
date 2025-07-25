@@ -22,3 +22,16 @@ cd AI-powered-resume-critic
 python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
+```
+## Create a .env file with your OpenAI key:
+
+```ini
+OPENAI_API_KEY=your-key-here
+```
+## Run the app
+```bash
+python app.py
+```
+## Visit http://localhost:5000
+
+
